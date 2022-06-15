@@ -14,7 +14,7 @@ int main(void)
 	fp = fopen("D:\\sample\\profile.txt", "r");
 	if (fp == NULL)
 	{
-		printf("ÆÄÀÏ ºÒ·¯¿À±â ½ÇÆÐ");
+		printf("íŒŒì¼ ë¶ˆëŸ¬ì˜¤ê¸° ì‹¤íŒ¨");
 	}
 	while (1)
 	{
@@ -29,13 +29,13 @@ int main(void)
 	}
 
 	while (1) {
-		printf("°Ë»öÇÒ Ä«Å×°í¸®¸¦ °í¸£½Ã¿À\n 1:ÀÌ¸§\t2:¼ºº°\t3:»ý³â¿ùÀÏ\t4:ÀüÈ­¹øÈ£\t5:Èñ¸Á±â¾÷\t6:Á¾·á\n");
+		printf("ê²€ìƒ‰í•  ì¹´í…Œê³ ë¦¬ë¥¼ ê³ ë¥´ì‹œì˜¤\n 1:ì´ë¦„\t2:ì„±ë³„\t3:ìƒë…„ì›”ì¼\t4:ì „í™”ë²ˆí˜¸\t5:í¬ë§ê¸°ì—…\t6:ì¢…ë£Œ\n");
 		scanf("%d", &cate);
 
 		switch (cate) {
 		case 1:
 			char name[20];
-			printf("Ã£À¸½Ã´Â ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+			printf("ì°¾ìœ¼ì‹œëŠ” ì´ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš” : ");
 			scanf("%s", &name);
 			for (i = 0; i < 25;i++) {
 				if (strcmp(a[i].name, name) == 0) {
@@ -45,7 +45,7 @@ int main(void)
 			break;
 		case 2:
 			char gender[20];
-			printf("Ã£À¸½Ã´Â ¼ºº°À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+			printf("ì°¾ìœ¼ì‹œëŠ” ì„±ë³„ì„ ìž…ë ¥í•˜ì„¸ìš” : ");
 			scanf("%s", &gender);
 			for (i = 0; i < 25;i++) {
 				if (strcmp(a[i].gender, gender) == 0) {
@@ -55,7 +55,7 @@ int main(void)
 			break;
 		case 3:
 			int birth;
-			printf("Ã£À¸½Ã´Â »ý³â¿ùÀÏÀ» ÀÔ·ÂÇÏ¼¼¿ä : ");
+			printf("ì°¾ìœ¼ì‹œëŠ” ìƒë…„ì›”ì¼ì„ ìž…ë ¥í•˜ì„¸ìš” : ");
 			scanf("%d", &birth);
 			for (i = 0; i < 25;i++) {
 				if (a[i].birth == birth) {
@@ -65,7 +65,7 @@ int main(void)
 			break;
 		case 4:
 			char phone[20];
-			printf("Ã£À¸½Ã´Â ÀüÈ­¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+			printf("ì°¾ìœ¼ì‹œëŠ” ì „í™”ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš” : ");
 			scanf("%s", &phone);
 			for (i = 0; i < 25;i++) {
 				if (strcmp(a[i].phone, phone) == 0) {
@@ -75,7 +75,7 @@ int main(void)
 			break;
 		case 5:
 			char company[20];
-			printf("Ã£À¸½Ã´Â Èñ¸Á±â¾÷À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+			printf("ì°¾ìœ¼ì‹œëŠ” í¬ë§ê¸°ì—…ì„ ìž…ë ¥í•˜ì„¸ìš” : ");
 			scanf("%s", &company);
 			for (i = 0; i < 25;i++) {
 				if (strcmp(a[i].company, company) == 0) {
